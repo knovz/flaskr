@@ -25,5 +25,5 @@ def test_config():
 
 def test_hello(client):
     """Test example /Hello route"""
-    response = client.get("/Hello")
-    assert response.data == b"Hello,World!"
+    response = client.get("/hello")
+    assert response.data == b"Hello, World of Flask!"
